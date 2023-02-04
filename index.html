@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/bootstrap-icons.css">
     <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+
+    <style>
+        .fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition:  0.9s ;
+            animation: fx 0.7s;
+            width: 100%;
+        }
+
+        @keyframes fx {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+            
+        }
+    </style>
+
+
 </head>
 <body>
     <div class="container-fluid">
@@ -55,7 +79,7 @@
 
         <div class="overflow-hidden mb-4" style="max-height: 30vh;">
         <div class="container px-5 text-center mb-4">
-            <img src="th.webp" class="img-fluid border rounded-3 shadow-lg mb-4" height="500" loading="lazy" alt="">
+            <img src="th.webp" class="img-fluid border rounded-3 shadow-lg mb-4" height="500" loading="lazy" id="img" alt="">
         </div>
         </div>
         
